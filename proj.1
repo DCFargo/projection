@@ -1,0 +1,181 @@
+.TH PROJ 1
+.SH NAME 
+Projection \- A project management utility
+.SH SYNOPSIS
+.B proj
+[\fB\-\-help\fR | \fB\-h\fR]
+[\fB\-\-verbose\fR | \fB\-v\fR]
+[\fB\-\-debug\fR | \fB\-d\fR]
+.IR command
+[\fIsubcommand\fR]
+[\fI<args>\fR]
+.SH DESCRIPTION
+.B Projection
+\- A blazing fast command line utility that acts as a project management solution for easy integration into your environment.
+Projection operates entirely off of the Rust programming language, and ensures both speed and memory safety.
+.PP
+For any issues, suggestions, or general comments, please go to our GitHub page: \fBDCFargo/projection\fR, or
+personal messages can be sent to my email: \fBdrew.fargo@gmail.com\fR.
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help\fR
+Displays a basic help screen.
+Default value is off.
+.TP
+.BR \-v ", " \-\-verbose\fR
+Enables alerts describing general actions the program is making.
+Useful in general for knowing what is parsed, what file is modified, etc...
+Default value is off.
+.TP
+.BR \-d ", " \-\-debug\fR
+Enables alerts describing every error-prone action the program takes.
+Only useful in resolving issues or debugging new versions.
+Also enables all verbose messages by default.
+Default value is off.
+.SH COMMANDS
+.B Please note: this section is solely for larger command categories, please refer to the subcommand section to view
+.B documentation on subcommands (like kanban add, etc.)
+.PP
+.TP
+.B init
+The \fBinit\fR command initializes a proj file in your directory.
+It copies a template file located in the binary folder, this template can be edited to your liking.
+If no template is found, the program will return an error that is not currently handled.
+If a template file is missing that you'd like to add, please visit our GitHub repository,
+it is named \fBtemplate.txt\fR in the root directory.
+.TP
+.B proj goal\fR <\fBadd\fR | \fBremove\fR | \fBedit\fR | \fBcomplete\fR | \fBview\fR>
+Goals are the largest category of items that can be completed.
+They have two states, /fBIncomplete/fR, or /fBComplete/fR, and are given one reference ID,
+and one display name (goal title).
+Goals can be scheduled like any other object, but this is usually for larger deadlines only.
+Goals are not for individual tasks, individual tasks should only use kanban objects.
+.TP
+.B proj kanban\fR <\fBadd\fR | \fBremove\fR | \fBedit\fR | \fBmove\fR | \fBview\fR | \fBextend\fR | \fBschedule\fR>
+Kanban objects are for smaller tasks that the project requires.
+Generally speaking, issues will always fall under this category.
+Unlike goals, kanban objects have three states: /fBTODO/fR, /fBIN PROGRESS/fR, or /fBDONE/fR.
+Kanban objects also have a reference id (issue number), and display name (issue title).
+Kanban objects can be scheduled deadlines, and extended like goal objects.
+Kanban objects are not for larger deadlines, it is best practice to use the goal object for such.
+.SH SUBCOMMANDS
+.B This section is divided into larger command categories.
+.PP
+.B [goal subcommands]
+.PP
+.TP
+.B proj goal add\fR \fIid display-name
+The \fBadd\fR subcommand creates a goal object.
+The \fRadd\fR subcommand takes two arguments, a reference id and a display name.
+The goal object cannot be scheduled with the \fBadd\fR subcommand as of yet,
+please use the \fBschedule\fR subcommand to do this.
+For all subcommands dealing with the goal object, please address it using the reference id specified.
+In case you forget the id, you can use \fBproj goal view\fR to get a comprehensive list.
+.TP
+.B proj goal remove\fR \fIid
+The \fBremove\fR subcommand deletes a goal object.
+The \fBremove\fR subcommand takes one argument, the reference id of the goal object.
+There is no undo, so be careful.
+.TP
+.B proj goal edit\fR \fIid new-disp-name
+The \fBedit\fR subcommand changes the display name of a goal object.
+The \fBedit\fR subcommand takes two arguments, a reference id and a modified display name.
+The current display name of the object referenced will change to the second argument.
+Note: there is no way to change a reference id besides recreation, as this is uncommon and never best usage.
+.TP
+.B proj goal complete\fR \fIid
+The \fBcomplete\fR subcommand changes the status of a goal object to complete.
+The \fBcomplete\fR subcommand takes one argument, the id of the object you wish to complete.
+There is no way to "uncomplete" a goal object, unless you recreate it.
+If you ever forget the status of a goal object, you can use \fBproj goal view\fR to view a comprehensive list.
+.TP
+.B proj goal view
+The \fBview\fR subcommand shows a comprehensive, colored list of all goal objects.
+The reference id, display name, status, and scheduled times are all listed with this subcommand.
+This can be most useful for either getting a quick check on the project or in case you forgot a reference id.
+.PP
+.B [kanban subcommands]
+.PP
+.TP
+.B proj kanban add\fR \fIid display-name
+The \fBadd\fR subcommand creates a new kanban object.
+The \fBadd\fR subcommand takes two arguments, a reference id and a display name.
+By default, the new kanban object is given the status of \fBTODO\fR, and this cannot be changed.
+All kanban objects must be referenced by their reference id, which can be checked using the \fBview\fR subcommand.
+Similar to the \fBproj goal add\fR command, a deadline cannot be directly assigned,
+and must be done through the \fBschedule\fR subcommand.
+.TP
+.B proj kanban remove\fR \fIid
+The \fBremove\fR subcommand deletes a kanban object.
+The \fBremove\fR subcommand takes one argument, the reference id of the kanban object.
+Like the goal variant, there is no undo, so be absolutely sure when entering.
+.TP
+.B proj kanban edit\fR \fIid new-disp-name
+The \fBedit\fR subcommand changes the display name of a kanban object.
+The \fBedit\fR subcommand takes two arguments, the reference id and a modified display name.
+.TP
+.B proj kanban move\fR \fIid\fR <\fBtodo\fR | \fBt\fR | \fBprogress\fR | \fBp\fR | \fBdone\fR | \fBd\fR>
+The \fBmove\fR subcommand changes the status of a referenced kanban object.
+The \fBmove\fR subcommand takes just two arguments, a reference id and desired state to change,
+which can be that of \fBTODO\fR, \fBIN PROGRESS\fR, or \fBDONE\fR.
+Unlike the goal object, you can move kanban objects from \fBDONE\fR back to \fBIN PROGRESS\fR,
+however, trying to change the status to an object's current status will return a syntax error.
+You can view a kanban object's current state through the \fBview\fR subcommand.
+.TP
+.B proj kanban extend\fR \fIid\fR <\fBhour\fR | \fBh\fR | \fBday\fR | \fBd\fR | \fBweek\fR | \fBw\fR> \fIamount\fR
+The \fBextend\fR subcommand extends the deadline of a kanban object, similar to the subcommand of the \fBgoal\fR
+command of the same name.
+Also like the \fBproj goal extend\fR command, the syntax is the same, taking three arguments: a reference id,
+a unit of time, and a value representing the amount you wish to extend the date.
+This command does not operate in absolute dates, but relative to the current deadline.
+(Think of it like "extend the deadline by 2 days")
+This subcommand will return a syntax error if there is no current deadline.
+.TP
+.B proj kanban schedule\fR \fIid month day year\fR [\fItime\fR]
+The \fBschedule\fR subcommand schedules a deadline for the referenced kanban object.
+The \fBschedule\fR subcommand takes four required and one optional argument:
+the reference id, the date in yyyy/mm/dd format, and the time in hh format, respectively.
+.SH EXAMPLES
+To get started, run the \fBinit\fR command:
+.PP
+.nf
+.RS
+.B proj init
+.RE
+.fi
+.PP
+Then, let's say you have an issue you need to have completed by Friday, and want to track it.
+Because it's a smaller task, assign it to a kanban object, which can be more closely tracked
+than a larger goal object. First, create the kanban object:
+.PP
+.nf
+.RS
+.B proj kanban add iss53 RefactorErrorFiles
+.RE
+.fi
+.PP
+Then you can schedule the object, at a certain time if you wish:
+.PP
+.nf
+.RS
+.B proj kanban schedule iss53 01 01 21 2200
+.RE
+.fi
+.PP
+Then, finally, you can move the kanban object to the \fBPROGRESS\fR category:
+.PP
+.nf
+.RS
+.B proj kanban move iss53 progress
+.RE
+.fi
+.PP
+And there you go! Once you fix the issue, you can finally move the object
+to the complete category, or even delete it:
+.PP
+.nf
+.RS
+.B proj kanban move iss53 done
+.B proj kanban remove iss53
+.RE
+.fi

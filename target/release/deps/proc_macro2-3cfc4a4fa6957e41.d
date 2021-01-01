@@ -1,0 +1,12 @@
+/Users/dcfargo/projection/target/release/deps/proc_macro2-3cfc4a4fa6957e41.rmeta: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/marker.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/parse.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/detection.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/fallback.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/wrapper.rs
+
+/Users/dcfargo/projection/target/release/deps/libproc_macro2-3cfc4a4fa6957e41.rlib: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/marker.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/parse.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/detection.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/fallback.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/wrapper.rs
+
+/Users/dcfargo/projection/target/release/deps/proc_macro2-3cfc4a4fa6957e41.d: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/marker.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/parse.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/detection.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/fallback.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/wrapper.rs
+
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/lib.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/marker.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/parse.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/detection.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/fallback.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.24/src/wrapper.rs:

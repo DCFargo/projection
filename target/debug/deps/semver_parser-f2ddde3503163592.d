@@ -1,0 +1,11 @@
+/Users/dcfargo/projection/target/debug/deps/semver_parser-f2ddde3503163592.rmeta: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs
+
+/Users/dcfargo/projection/target/debug/deps/libsemver_parser-f2ddde3503163592.rlib: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs
+
+/Users/dcfargo/projection/target/debug/deps/semver_parser-f2ddde3503163592.d: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs
+
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs:

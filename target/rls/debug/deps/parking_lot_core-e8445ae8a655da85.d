@@ -1,0 +1,11 @@
+/Users/dcfargo/projection/target/rls/debug/deps/parking_lot_core-e8445ae8a655da85.rmeta: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/parking_lot.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/spinwait.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/thread_parker/mod.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/util.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/word_lock.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/thread_parker/unix.rs
+
+/Users/dcfargo/projection/target/rls/debug/deps/parking_lot_core-e8445ae8a655da85.d: /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/lib.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/parking_lot.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/spinwait.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/thread_parker/mod.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/util.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/word_lock.rs /Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/thread_parker/unix.rs
+
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/lib.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/parking_lot.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/spinwait.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/thread_parker/mod.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/util.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/word_lock.rs:
+/Users/dcfargo/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.7.2/src/thread_parker/unix.rs:
